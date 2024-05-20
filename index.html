@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Voiceglow HTML Sample</title>
+    </head>
+    <body>
+        <h1>Chatbot on Official Website</h1>
+        <h3>This is basically your website here :) </h3>
+        
+
+        
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- <iframe width="300" height="300" frameborder="0" style="border: none;" title="Calendly Date & Time Selector" 
+    src="https://calendly.com/janushangover/30min"  allowfullscreen></iframe> -->
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+<script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '664b1746c362e55f7b1e7c40' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
+    </body>
+</html>    
+   
+
+
+
